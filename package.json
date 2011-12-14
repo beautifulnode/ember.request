@@ -1,0 +1,17 @@
+{
+  "author": "Tom Wilson <tom@beautifulnode.com> (http://www.beautifulnode.com)",
+  "name": "Ember.Request",
+  "description": "An Ember Plugin to manage ajax requests to a http server.",
+  "version": "0.1.0",
+  "repository": {
+    "url": ""
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "engines": {
+    "node": "~0.6.x"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
