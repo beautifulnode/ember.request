@@ -80,11 +80,9 @@ window.Ember.Request ?= Ember.Request = Ember.Mixin.create
     console.log data
     $.post(url, data, null, "json")
       .success( (data, txtStatus) =>
-        console.log 'Success...'
         cb null, data
       )
       .error( (data, txtStatus) =>
-        console.log 'Fail...'
         cb new Error("Server Error: #{txtStatus}"), data
       )
     true

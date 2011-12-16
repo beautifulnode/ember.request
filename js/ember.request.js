@@ -35,10 +35,8 @@
         data['authenticity_token'] = $('meta[name=csrf-token]').attr('content');
         console.log(data);
         $.post(url, data, null, "json").success(function(data, txtStatus) {
-          console.log('Success...');
           return cb(null, data);
         }).error(function(data, txtStatus) {
-          console.log('Fail...');
           return cb(new Error("Server Error: " + txtStatus), data);
         });
         return true;
